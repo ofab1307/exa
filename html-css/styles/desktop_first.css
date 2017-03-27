@@ -1,15 +1,250 @@
-.column1of2 {
-  float: left;
-  width: 620px;
-  margin: 10px;
+
+/*==========  Desktop First Method  ==========*/
+
+#header {
 }
-.column2of2 {
-  float: left;
-  width: 300px;
-  margin: 10px;
+
+#main-center {
+  position: static;
+  width: 100%;
+  margin-left: 20%;
 }
-.column1of3, .column2of3, .column3of3 {
-  width: 300px;
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#navigation {
+  float: right;
+  width: 100%;
+}
+
+#navigation ul li {
+  display: inline;
+}
+
+#navigation li a {
   float: left;
-  margin: 10px;
+  border-right: 1px solid #fff;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+#navigation li a:hover {
+  background: #383;
+}
+
+#content {
+  width: 60%;
+  padding: 20px 0;
+  margin: 0 0 0 4%;
+}
+
+section.column1of3 {
+  float: left;
+  width: 26%;
+  padding: 20px 0;
+  margin: 0 3% 0 0;
+}
+
+section.column2of3 {
+  float: left;
+  vertical-align: middle;
+  width: 26%;
+  padding: 20px 0;
+  margin: 0 3% 0 0;
+  margin-left: 7%;
+}
+
+aside.column3of3 {
+  float: right;
+  width: 26%;
+  padding: 20px 0;
+  margin: 0 3% 0 0;
+}
+
+#content-container {
+  float: left;
+}
+
+img.big-image {
+  width: 60%;
+  height: auto;
+}
+img.image {
+  width: 100%;
+}
+
+#footer {
+  text-align: center;
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width : 720px) {
+
+  #header {
+  }
+
+  #container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #navigation {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  #navigation ul li {
+    display: inline;
+    text-align: center;
+  }
+
+  #navigation li a {
+    float: left;
+    border-right: 1px solid #fff;
+    text-align: center;
+  }
+
+  section.column1of3 {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 3% 0 0;
+  }
+
+  section.column2of3 {
+    float: left;
+    vertical-align: middle;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 3% 0 0;
+    margin-left: 7%;
+  }
+
+  aside.column3of3 {
+    float: right;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 3% 0 0;
+  }
+  img.big-image {
+    width: 50%;
+  }
+
+  #footer {
+    text-align: center;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  #header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 35px;
+  }
+
+  #aside {
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+
+  #content {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 75px;
+  }
+
+  #navigation ul li {
+    display: block;
+  }
+
+  #navigation ul li a {
+    float: right;
+  }
+
+  #content h2 {
+    margin: 5% 0;
+  }
+
+  img.big-image {
+    width: 100%;
+    height: auto;
+  }
+
+  #footer {
+    text-align: center;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  #header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 35px;
+  }
+
+  #aside {
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+  
+  #content {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 75px;
+  }
+
+  #navigation ul li {
+    display: block;
+  }
+
+  #navigation ul li a {
+    float: none;
+  }
+
+  #content h2 {
+    margin: 5% 0;
+  }
+
+  img.big-image {
+    width: 100%;
+    height: auto;
+  }
+
+  #footer {
+    text-align: center;
+  }
 }

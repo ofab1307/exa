@@ -1,0 +1,22 @@
+@media print {
+  #header,
+  #navigation {
+    display: none;
+  }
+  #footer ul {
+    display: none;
+  }
+  #content {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #ss {
+    display: block;
+  }
+  .big-image {
+    display:none;
+  }
+  .box {
+    display: none;
+  }
+}
