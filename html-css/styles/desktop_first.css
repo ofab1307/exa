@@ -2,12 +2,14 @@
 /*==========  Desktop First Method  ==========*/
 
 #header {
+  background-color: orange;
 }
 
 #main-center {
-  position: static;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  margin-left: 20%;
 }
 
 #container {
@@ -26,21 +28,12 @@
 
 #navigation li a {
   float: left;
-  border-right: 1px solid #fff;
-}
-
-#navigation li a {
+  border-right: 1px solid;
   color: #fff;
 }
 
 #navigation li a:hover {
-  background: #383;
-}
-
-#content {
-  width: 60%;
-  padding: 20px 0;
-  margin: 0 0 0 4%;
+  background: orange;
 }
 
 section.column1of3 {
@@ -66,11 +59,10 @@ aside.column3of3 {
   margin: 0 3% 0 0;
 }
 
-#content-container {
-  float: left;
-}
-
 img.big-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 60%;
   height: auto;
 }
@@ -95,8 +87,20 @@ img.image {
 
 /* Small Devices, Tablets */
 @media screen and (max-width : 720px) {
-
   #header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  #header h1 {
+    font-size: 20px;
+  }
+
+  #main-center {
+    width: 100%;
   }
 
   #container {
@@ -106,6 +110,7 @@ img.image {
 
   #navigation {
     float: left;
+    top: 0;
     width: 100%;
     text-align: center;
   }
@@ -121,6 +126,10 @@ img.image {
     text-align: center;
   }
 
+  #main-center {
+    width: 100%;
+  }
+
   section.column1of3 {
     float: left;
     width: 100%;
@@ -134,7 +143,6 @@ img.image {
     width: 100%;
     padding: 20px 0;
     margin: 0 3% 0 0;
-    margin-left: 7%;
   }
 
   aside.column3of3 {
@@ -143,12 +151,21 @@ img.image {
     padding: 20px 0;
     margin: 0 3% 0 0;
   }
+
   img.big-image {
-    width: 50%;
+    width: 100%;
+  }
+
+  img.image {
+    width: 100%;
   }
 
   #footer {
     text-align: center;
+  }
+
+  #footer ul {
+    display: none;
   }
 
 }
@@ -160,19 +177,7 @@ img.image {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 35px;
-  }
-
-  #aside {
-    float: left;
-    width: 100%;
-    padding: 0;
-  }
-
-  #content {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
+    height: 55px;
   }
 
   #navigation {
@@ -187,8 +192,8 @@ img.image {
     float: right;
   }
 
-  #content h2 {
-    margin: 5% 0;
+  #main-center {
+    width: 100%;
   }
 
   img.big-image {
@@ -211,18 +216,6 @@ img.image {
     height: 35px;
   }
 
-  #aside {
-    float: left;
-    width: 100%;
-    padding: 0;
-  }
-  
-  #content {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-  }
-
   #navigation {
     margin-top: 75px;
   }
@@ -235,8 +228,8 @@ img.image {
     float: none;
   }
 
-  #content h2 {
-    margin: 5% 0;
+  #main-center {
+    width: 100%;
   }
 
   img.big-image {
